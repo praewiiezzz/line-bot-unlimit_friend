@@ -1,2 +1,1 @@
-# line-bot-unlimit_friend
-for smart substation meeting
+# LINE-BOT-PHP-Starter
