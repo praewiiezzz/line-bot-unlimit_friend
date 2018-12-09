@@ -1,7 +1,7 @@
 <?php // callback.php
 
 require "autoload.php";
-require_once('LINEBotTiny.php');
+require_once("LINEBotTiny.php");
 
 $access_token = 'SxczR2IyC07PRDl2mKgNJIiFQxTTb1Hi3M6KEb3KkCY6e4sl+mr8f4awoIGMnM4/1dAvVrLLdnOKajyPgM30y995FTARhclLsAxWdTQPGgkkcmcOpkV2pUu6R+VWyuqFjU9Ja6YUPxLXMA1t22FLkgdB04t89/1O/w1cDnyilFU=';
 
