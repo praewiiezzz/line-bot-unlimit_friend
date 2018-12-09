@@ -4,4 +4,4 @@ require 'autoload.php';
 require_once('LINEBotTiny.php');
 
 
-echo "OK";
+echo "OK2";
