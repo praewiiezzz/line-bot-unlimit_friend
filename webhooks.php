@@ -1,9 +1,9 @@
 <?php // callback.php
 
-require "vendor/autoload.php";
-require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
+require "autoload.php";
+require_once('LINEBotTiny.php');
 
-$access_token = 'C6yU4avsrRJwRDd1QLE5GMjfW4FKaEVkE0cuCdCPMSpwPFkhxy6DPiT4BJt+LXH0Krw7P105yBcorxE0TzT1mlmvvTWzTOk3tAt6av5wjzkNQNddBAgFejnTYcSj66J+i40XZuUSyIyys5xX+jC+ewdB04t89/1O/w1cDnyilFU=';
+$access_token = 'SxczR2IyC07PRDl2mKgNJIiFQxTTb1Hi3M6KEb3KkCY6e4sl+mr8f4awoIGMnM4/1dAvVrLLdnOKajyPgM30y995FTARhclLsAxWdTQPGgkkcmcOpkV2pUu6R+VWyuqFjU9Ja6YUPxLXMA1t22FLkgdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -50,10 +50,10 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-require "vendor/autoload.php";
-$access_token = 'C6yU4avsrRJwRDd1QLE5GMjfW4FKaEVkE0cuCdCPMSpwPFkhxy6DPiT4BJt+LXH0Krw7P105yBcorxE0TzT1mlmvvTWzTOk3tAt6av5wjzkNQNddBAgFejnTYcSj66J+i40XZuUSyIyys5xX+jC+ewdB04t89/1O/w1cDnyilFU=';
-$channelSecret = '17fece9503cef636192da92fb566ee4d';
-$pushID = 'U5479bc5c09c356cdec1a1d1b36a5d9e0';
+require "autoload.php";
+$access_token = 'SxczR2IyC07PRDl2mKgNJIiFQxTTb1Hi3M6KEb3KkCY6e4sl+mr8f4awoIGMnM4/1dAvVrLLdnOKajyPgM30y995FTARhclLsAxWdTQPGgkkcmcOpkV2pUu6R+VWyuqFjU9Ja6YUPxLXMA1t22FLkgdB04t89/1O/w1cDnyilFU=';
+$channelSecret = 'cd0010ad4444002f4c583c751713bcd5';
+$pushID = 'U219bbe2274f2d1e13e1456ecddd5259e';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text2);
