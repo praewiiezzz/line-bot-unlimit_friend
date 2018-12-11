@@ -8,12 +8,12 @@ $access_token = 'C6yU4avsrRJwRDd1QLE5GMjfW4FKaEVkE0cuCdCPMSpwPFkhxy6DPiT4BJt+LXH
 
 $channelSecret = '17fece9503cef636192da92fb566ee4d';
 
-$pushID = 'U5479bc5c09c356cdec1a1d1b36a5d9e0';
+$pushID = 'U19c3b82407a7eb6a9e1ab1f27daa6605';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('สวัสดีค่ะ');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('7 โมงเป็นต้นไปแน่นอนค่ะ ');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
