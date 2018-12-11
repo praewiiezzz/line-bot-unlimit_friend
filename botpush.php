@@ -17,7 +17,7 @@ $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('7 โ
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-echo "OK";
+echo "OK2";
 
 
 
