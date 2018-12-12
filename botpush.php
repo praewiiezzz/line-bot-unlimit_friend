@@ -8,16 +8,16 @@ $access_token = 'mwZ0JayWXNUoxnj6+Sy/7ffex7pdpSM1CIqFrsT9GzgnwnUTGutnuPEZmVVkQFr
 
 $channelSecret = 'cd0010ad4444002f4c583c751713bcd5';
 
-$pushID = 'U83c99e6420973909a2b480b593179b98';
+$pushID = 'Ue10d77a7d5904d8947de071eb02a5893';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder(' Test');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('น้องสมาร์ทเพิ่งอัพเดทกำหนดการล่าสุดไป รบกวนถามน้องใหม่นะคะ');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-echo "OK";
+echo "OK นะ";
 
 
 
