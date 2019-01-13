@@ -55,6 +55,14 @@ $channelSecret = 'cd0010ad4444002f4c583c751713bcd5';
 $pushID = 'U83c99e6420973909a2b480b593179b98';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
+$response = $bot->getProfile('$event['source']['userId']');
+if ($response->isSucceeded()) {
+    $profile = $response->getJSONDecodedBody();
+    echo $profile['displayName'];
+    echo $profile['pictureUrl'];
+    echo $profile['statusMessage'];
+}
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text2);
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
