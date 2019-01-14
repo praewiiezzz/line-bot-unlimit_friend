@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
+			/*$messages = [
 				'type' => 'text',
 				'text' => $text
 			];
@@ -44,9 +44,10 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
-			curl_close($ch);*/
+			curl_close($ch);
 
-			echo $result . "\r\n";
+			echo $result . "\r\n";*/
+
 		}
 	}
 }
